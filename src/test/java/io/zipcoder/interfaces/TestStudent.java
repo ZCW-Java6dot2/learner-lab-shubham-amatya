@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TestStudent {
-    Student student = new Student(266,"Sushim");
+    Student student = new Student("Sushim");
 
     @Test
 

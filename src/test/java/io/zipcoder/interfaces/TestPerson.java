@@ -13,13 +13,12 @@ public class TestPerson {
         String expectedName = "taki";
 
         //when
-        Person person = new Person(expectedId, expectedName);
+        Person person = new Person(expectedName);
 
         //then
-        long actualId = person.getId();
+
         String actualName = person.getName();
 
-        Assert.assertEquals(expectedId, actualId);
         Assert.assertEquals(expectedName, actualName);
     }
 

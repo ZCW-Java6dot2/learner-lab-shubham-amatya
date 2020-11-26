@@ -6,8 +6,8 @@ import io.zipcoder.interfaces.Person;
 public class Student extends Person implements Learner {
     private double totalStudyTime;
 
-    public Student(long id, String name) {
-        super(id, name);
+    public Student( String name) {
+        super( name);
     }
 
     @Override
@@ -16,7 +16,7 @@ public class Student extends Person implements Learner {
 
     }
 
-    @Override
+
     public Double getTotalStudyTime() {
         return totalStudyTime;
     }

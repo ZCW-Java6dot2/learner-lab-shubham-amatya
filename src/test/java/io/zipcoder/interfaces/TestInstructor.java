@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class TestInstructor {
     Instructor instructor = new Instructor(266, "Sushim");
-    Student student = new Student(11, "Shubham");
+    Student student = new Student( "Shubham");
 
 
     @Test
@@ -40,13 +40,13 @@ public class TestInstructor {
 
         //given
         double expectedHrs = 10;
-        Student s1 = new Student(1, "bob");
-        Student s2 = new Student(2, "mary");
-        Learner[] learners = {student, s1, s2};
+        Student s1 = new Student( "bob");
+        Student s2 = new Student( "mary");
+        Student[] students = {student, s1, s2};
 
         //when
-        instructor.lecture(learners, expectedHrs);
-        double actualHrs = student.getTotalStudyTime() * learners.length;
+        instructor.lecture(students, expectedHrs);
+        double actualHrs = student.getTotalStudyTime() * students.length;
 
         //then
         Assert.assertEquals(expectedHrs, actualHrs, 0.001);

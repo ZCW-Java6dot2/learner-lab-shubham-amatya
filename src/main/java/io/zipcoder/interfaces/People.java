@@ -7,12 +7,12 @@ public class People extends Person{
     List<Person> personList;
 
     public People(long id, String name) {
-        super(id, name);
+        super(name);
     }
 
 
     public void add(Person person){
-        personList.add(new Person(1 , null ));
+        personList.add(new Person( null ));
 
     }
 

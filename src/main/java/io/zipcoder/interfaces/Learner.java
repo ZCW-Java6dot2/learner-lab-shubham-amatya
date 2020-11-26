@@ -4,6 +4,5 @@ public interface Learner {
 
     void learn(double numOfHours);
 
-    Double getTotalStudyTime();
 
 }
